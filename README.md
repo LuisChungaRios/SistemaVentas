@@ -1,5 +1,5 @@
 # Sistema de ventas 
-## Lenguajes Usados
+## Sistema desarrollado con : 
 - PHP
 - Javascript
 - Jquery
