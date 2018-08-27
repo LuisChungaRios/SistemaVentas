@@ -1,0 +1,10 @@
+function Output($dest='', $name='', $isUTF8=false)
+
+	// Output PDF to some destination
+		ob_clean();
+
+
+Para los reportes agregar el comando ob_clean(); en la function output 
+para evitar los errores de 
+
+Fatal error: Uncaught Exception: FPDF error: Some data has already been output, can't send PDF file in /opt/lampp/htdocs/sistema/fpdf181/fpdf.php:271 Stack trace: #0 /opt/lampp/htdocs/sistema/fpdf181/fpdf.php(1063): FPDF->Error('Some data has a...') #1 /opt/lampp/htdocs/sistema/fpdf181/fpdf.php(999): FPDF->_checkoutput() #2 /opt/lampp/htdocs/sistema/reportes/exFactura.php(93): FPDF->Output('I', 'Reporte de Vent...') #3 {main} thrown in /opt/lampp/htdocs/sistema/fpdf181/fpdf.php on line 271
